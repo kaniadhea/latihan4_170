@@ -24,7 +24,7 @@ int main() {
 		cout << "3. Luas Segitiga" << endl;
 		cout << "4.Exit" << endl;
 		cout << "pilihan (1/2/3/4) = ";
-		cin >> pilihan; 
+		cin >> pilihan;
 
 		switch (pilihan) {
 			case 1
@@ -37,11 +37,20 @@ int main() {
 				case 2
 					cout << "masukan jari-jari = ";
 					cin >> jejari
-					cout << Luas Lingkaran = "<< LuasLingkaran (jejari)";
+						cout << Luas Lingkaran = "<< LuasLingkaran (jejari)";
 					break;
 					case 3
 						cout << "masukan alas = ";
 						cin >> alas
-						cout << "masukkan tinggi =";
+							cout << "masukkan tinggi =";
 						cin >> tinggi;
-						cout << "luas segitiga = " <<LuasSegitiga(alas, tinggi)
+						cout << "luas segitiga = " << LuasSegitiga(alas, tinggi)
+							break;
+						case 4
+							break;
+						default:
+							cout << "PILIHAN SALAH" << endl;
+							break;
+		}
+	} while (pilihan != 4);
+}
